@@ -1,0 +1,178 @@
+/* Reset básico para remover margens e preenchimentos padrões e garantir que o box-sizing seja border-box */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;/* Inclui padding e border no tamanho total dos elementos */
+}
+
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: hsl(221, 100%, 96%);
+    font-size: 18px;
+    display: flex;/* Usado para centralizar o conteúdo */
+    justify-content: center;/* Centraliza horizontalmente */
+    align-items: center;/* Centraliza verticalmente */
+    min-height: 100vh;/* Garante que ocupe toda a altura da tela */
+}
+
+h3 {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;/* Layout em linha (lado a lado) */
+    border-radius: 30px;
+    overflow: hidden;/* Garante que o conteúdo não ultrapasse o container */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 740px; /* Largura fixa baseada no design desktop */
+    height: 500px; /* Altura ajustada para combinar com o layout das imagens */
+    max-width: 90%;/* Garante que seja responsivo em telas menores */
+    flex-direction: row;/*Direção dos elementos: linha */
+}
+
+.result {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    border-radius: 30px;
+    flex: 1; /* Ocupa metade do espaço */
+    padding: 2.5rem 2rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    display: flex; /* Flexbox para alinhar internamente */
+    flex-direction: column;
+    align-items: center; /* Alinha ao centro horizontalmente */
+    justify-content: flex-start; /* Alinha os itens no topo */
+}
+
+.result h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem; /* Espaço abaixo do título*/
+    opacity: 0.9;
+}
+
+.score-circle {
+    background: radial-gradient(circle at top, hsl(256, 72%, 46%), hsl(241, 81%, 54%));
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;/* Flexbox para centralizar */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;/* Espaço acima e abaixo */
+}
+
+.score-circle .score {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.score-circle .of {
+    font-size: 0.9rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.result h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+}
+
+.result p {
+    font-size: 0.9rem;
+    color: hsl(241, 100%, 89%);
+    max-width: 200px;
+    margin-top: 1rem;
+}
+
+.summary {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary h3 {
+    margin: 1.5rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+
+ul {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espaço entre os itens */
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem; /* Espaço entre os elementos */
+    width: 18rem;
+    margin: 0.1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.item img {
+    margin-right: 0.8rem;
+}
+
+.item span {
+    flex: 1;
+    margin-left: 0.8rem;
+}
+
+.light {
+    color: hsl(240, 4%, 55%);
+    font-weight: 400;
+}
+
+strong {
+    color:#000 ;
+}
+
+.reaction {
+  background: hsl(0, 100%, 97%);
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  background: hsl(39, 100%, 96%);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  background: hsl(166, 100%, 97%);
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  background: hsl(234, 100%, 96%);
+  color: hsl(234, 85%, 45%);
+}
+
+
+button {
+    width: 18rem;
+    margin: 1.8rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
