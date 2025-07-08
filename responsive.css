@@ -17,6 +17,9 @@
   }
 
   .sumario {
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
     padding: 2rem 1.5rem;
     align-items: center;
   }
@@ -38,6 +41,6 @@
   button {
     width: 100%;
     max-width: 20rem;
-    margin-left: 0;
+    margin-left: 30px;
   }
 }
